@@ -8,13 +8,13 @@ export default function Hero() {
       className="relative min-h-[88vh] flex items-center pt-16"
     >
       <div className="section pt-12 md:pt-20 w-full">
-        <div className="grid md:grid-cols-5 gap-10 md:gap-16 items-center">
+        <div className="grid md:grid-cols-5 gap-10 md:gap-16 items-end">
           {/* Text column */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="md:col-span-3 order-2 md:order-1"
+            className="md:col-span-3 order-2 md:order-1 pb-8"
           >
             <h1 className="text-5xl md:text-7xl font-bold text-slate-900 tracking-tight leading-[1] mb-5">
               {profile.name}
@@ -56,14 +56,14 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Photo column */}
+          {/* Photo column — tall editorial portrait */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
             className="md:col-span-2 order-1 md:order-2 flex justify-center md:justify-end"
           >
-            <div className="relative">
+            <div className="relative w-full max-w-xs md:max-w-none">
               <img
                 src={profile.photoUrl}
                 alt={profile.name}
@@ -71,12 +71,12 @@ export default function Hero() {
                   e.currentTarget.style.display = 'none'
                   e.currentTarget.nextElementSibling.style.display = 'flex'
                 }}
-                className="w-48 h-64 md:w-72 md:h-96 rounded-2xl object-cover ring-1 ring-slate-200 shadow-xl shadow-slate-300/40"
+                className="w-full h-[420px] md:h-[580px] rounded-2xl object-cover object-top ring-1 ring-slate-200 shadow-xl shadow-slate-300/40"
               />
               {/* Initials fallback */}
               <div
                 style={{ display: 'none' }}
-                className="w-48 h-64 md:w-72 md:h-96 rounded-2xl items-center justify-center text-6xl md:text-7xl font-bold text-white bg-slate-900 ring-1 ring-slate-200 shadow-xl shadow-slate-300/40"
+                className="w-full h-[420px] md:h-[580px] rounded-2xl items-center justify-center text-6xl md:text-7xl font-bold text-white bg-slate-900 ring-1 ring-slate-200 shadow-xl shadow-slate-300/40"
               >
                 GR
               </div>
