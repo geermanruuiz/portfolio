@@ -49,13 +49,20 @@ export default function Contact() {
               {profile.phone}
             </a>
           </div>
+          <div className="eyebrow !mb-2">Phone</div>
+            <a
+              href={`tel:${profile.phone2.replace(/\s/g, '')}`}
+              className="text-slate-900 hover:text-accent transition-colors"
+            >
+              {profile.phone2}
+            </a>
           <div>
             <div className="eyebrow !mb-2">Location</div>
             <div className="text-slate-900">{profile.location}</div>
           </div>
           <div>
             <div className="eyebrow !mb-2">Status</div>
-            <div className="text-slate-900">Open to roles</div>
+            <div className="text-slate-900">Finishing studies</div>
           </div>
         </div>
 

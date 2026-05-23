@@ -11,6 +11,7 @@ export const profile = {
   location: "Lausanne, Switzerland",
   email: "cabelloruizgerman@gmail.com",
   phone: "+41 76 266 38 31",
+  phone2: "+34 640 56 80 10",
   github: "https://github.com/geermanruuiz",
   linkedin: "https://www.linkedin.com/in/germán-ruiz-cabello-7906681b9/", // ← add your LinkedIn handle
   resumeUrl: "/CV.pdf",       // place CV.pdf in /public
@@ -56,6 +57,7 @@ export const experience = [
       "Leading technical design end-to-end: domain modeling, REST API, database schema, infra.",
     ],
     stack: ["Java", "Spring Boot", "PostgreSQL", "AWS EC2", "AWS RDS", "REST"],
+    link: "https://avalohost.com",
   },
   {
     role: "Freelance Web Developer & IT Consultant",
@@ -92,6 +94,16 @@ export const projects = [
     description:
       "End-to-end design and development of a responsive portfolio website for an architecture firm.",
     stack: ["React", "Vite", "Tailwind CSS"],
+    link: null,
+  },
+  {
+    name: "Popnet",
+    role: "Agenda Layer Engineer",
+    year: "2026",
+    status: "On-going",
+    description:
+      "How a community can make democratic decisions at scale without a central authority and without being gamed by Sybil attacks. With two teammates I built the agenda layer: posts carry two-level branch/leaf tags that form discussion channels, and a three-filter pipeline (quorum → top-N approval → pairwise win rate) turns scattered personal priorities into a single ranked community agenda — with branches rolling up fragmented leaf votes so collective interest isn't lost. My piece was the system's first search engine: a Go backend with field-weighted ranking over titles, tags, body, and replies, plus a Svelte 5 frontend with debounced search-as-you-type, URL-synced state, and snippet highlighting. I shipped it as a scanner-based baseline so a future inverted-index + BM25 design could be benchmarked against real numbers. What I enjoyed most was that every engineering choice traced back to a concrete human process, which kept the trade-offs grounded rather than abstract.",
+    stack: ["Go", "Svelte"],
     link: null,
   },
 ];
