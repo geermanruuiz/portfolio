@@ -102,7 +102,7 @@ export const projects = [
     year: "2026",
     status: "On-going",
     description:
-      "How a community can make democratic decisions at scale without a central authority and without being gamed by Sybil attacks. With two teammates I built the agenda layer: posts carry two-level branch/leaf tags that form discussion channels, and a three-filter pipeline (quorum → top-N approval → pairwise win rate) turns scattered personal priorities into a single ranked community agenda — with branches rolling up fragmented leaf votes so collective interest isn't lost. My piece was the system's first search engine: a Go backend with field-weighted ranking over titles, tags, body, and replies, plus a Svelte 5 frontend with debounced search-as-you-type, URL-synced state, and snippet highlighting. I shipped it as a scanner-based baseline so a future inverted-index + BM25 design could be benchmarked against real numbers. What I enjoyed most was that every engineering choice traced back to a concrete human process, which kept the trade-offs grounded rather than abstract.",
+      "How a community can make democratic decisions at scale without a central authority and without being gamed by Sybil attacks.",
     stack: ["Go", "Svelte"],
     link: null,
   },
