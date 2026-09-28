@@ -94,7 +94,7 @@ export const projects = [
     description:
       "End-to-end design and development of a responsive portfolio website for an architecture firm.",
     stack: ["React", "Vite", "Tailwind CSS"],
-    link: null,
+    link: "https://progesarquitectura.es",
   },
   {
     name: "Popnet",
@@ -104,6 +104,16 @@ export const projects = [
     description:
       "How a community can make democratic decisions at scale without a central authority and without being gamed by Sybil attacks.",
     stack: ["Go", "Svelte"],
+    link: null,
+  },
+  {
+    name: "Amsabe booking platform",
+    role: "Developer",
+    year: "2026",
+    status: "On-going",
+    description:
+      "Design, develop and ship an online booking platform for a private firm.",
+    stack: ["Java", "React", "Javascript", "Docker"],
     link: null,
   },
 ];
@@ -153,5 +163,5 @@ export const certifications = [
 export const languages = [
   { name: "Spanish", level: "Native" },
   { name: "English", level: "Advanced (C1)" },
-  { name: "French", level: "DELF A2 — learning" },
+  { name: "French", level: "DELF A2" },
 ];

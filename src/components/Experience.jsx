@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { ExternalLink } from 'lucide-react'
 import { experience } from '../data.js'
 
 function getInitials(company) {
@@ -83,13 +84,24 @@ export default function Experience() {
                 )}
 
                 {exp.stack && exp.stack.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {exp.stack.map((s) => (
                       <span key={s} className="chip">
                         {s}
                       </span>
                     ))}
                   </div>
+                )}
+
+                {exp.link && (
+                  <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-accent hover:text-accent-dark transition-colors"
+                  >
+                    Visit {exp.company} <ExternalLink size={14} />
+                  </a>
                 )}
               </div>
             </div>
